@@ -20,7 +20,9 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 		+ posicion;
 		return r;
 	}
+	public abstract short compareTo(Portero p);
 	
+	@Override
 	public int compareTo(Futbolista f) {
 		int resultado;
 		if (this.nombre.equals(f.nombre) && this.edad == f.edad &&

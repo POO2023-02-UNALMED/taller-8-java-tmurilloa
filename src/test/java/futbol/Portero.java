@@ -22,6 +22,7 @@ public class Portero extends Futbolista implements Comparable<Futbolista>{
 	public boolean jugarConLasManos() {
 		return true;
 	}
+	@Override
 	public short compareTo(Portero otroFutbolista) {
 		short diferencia = (short) Math.abs(this.golesRecibidos - otroFutbolista.golesRecibidos);
 		
