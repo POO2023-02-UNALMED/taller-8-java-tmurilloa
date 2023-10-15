@@ -20,9 +20,8 @@ public class Jugador extends Futbolista implements Comparable<Object>{
 		return false;
 	}
 	public String toString() {
-		String r = "El futbolista " + getNombre() + " tiene " +
-	getEdad() + ", y juega de " + getPosicion() + " con el dorsal " +
-				dorsal + ".Ha marcado " + golesMarcados;
+		String r = super.toString() + " con el dorsal " +
+				dorsal + ". Ha marcado " + golesMarcados;
 		
 		return r;
 	}

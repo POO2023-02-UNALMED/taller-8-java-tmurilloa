@@ -14,8 +14,7 @@ public class Portero extends Futbolista implements Comparable<Object>{
 	}
 
 	public String toString() {
-		String r = "El futbolista "+ getNombre() + " tiene "
-				+ getEdad() + ", y jueda de " + getPosicion() + " con el dorsal " + dorsal + ". Le han marcado  " + golesRecibidos ;
+		String r = super.toString() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos ;
 		
 		return r;
 	}
