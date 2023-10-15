@@ -14,13 +14,13 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 		this.edad = edad;
 		this.posicion = posicion;
 	}
-	
+	@Override
 	public String toString() {
 		String r = "El futbolista " + nombre + " tiene " + edad + ", y juega de "
 		+ posicion;
 		return r;
 	}
-	public abstract short compareTo(Portero p);
+
 	
 	@Override
 	public int compareTo(Futbolista f) {

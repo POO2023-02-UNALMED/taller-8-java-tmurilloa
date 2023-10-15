@@ -23,8 +23,8 @@ public class Portero extends Futbolista implements Comparable<Futbolista>{
 		return true;
 	}
 	@Override
-	public short compareTo(Portero otroFutbolista) {
-		short diferencia = (short) Math.abs(this.golesRecibidos - otroFutbolista.golesRecibidos);
+	public int compareTo(Futbolista otroFutbolista) {
+		int diferencia =  Math.abs(this.golesRecibidos - ((Portero)otroFutbolista).golesRecibidos);
 		
 		return diferencia;
 	}
